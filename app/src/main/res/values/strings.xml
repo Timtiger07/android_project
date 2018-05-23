@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">New_Project2</string>
+    <string name="_30">30%</string>
+    <string name="_70">70%</string>
+    <string name="_60">60%</string>
+    <string name="user">User</string>
+    <string name="_40">40%</string>
+    <string name="day_4">Day 4</string>
+    <string name="day_3">Day 3</string>
+    <string name="day_2">Day 2</string>
+    <string name="day_1">Day 1</string>
+    <string name="new_project">New Project</string>
+    <string name="welcome_tocure_lives">Welcome to Cure Lives</string>
+    <string name="email_address">Email Address</string>
+    <string name="pass">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">Login</string>
+    <string name="reg">Register Now</string>
+    <string name="training">Training</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruby.new_project2.day_1.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_project"
+        android:layout_margin="8dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:numColumns="auto_fit"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        >
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="@string/day_1"
+        android:layout_margin="16dp"
+        android:textSize="40sp"
+        android:onClick="bt1"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="@string/day_2"
+        android:onClick="bt2"
+        android:textSize="40sp"
+        android:layout_margin="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/day_4"
+        android:layout_margin="16sp"
+        android:onClick="bt3"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_margin="16sp"
+        android:text="@string/day_3"
+        android:onClick="bt4"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    </GridLayout>
+</RelativeLayout>
+</LinearLayout>

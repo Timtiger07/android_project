@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.ruby.new_project2.day_2.Main2Activity">
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/toolbar"
+    android:layout_gravity="center"
+    app:titleTextColor="@color/colorPrimaryDark"
+    android:background="@color/colorAccent"
+    >
+
+</android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="@string/_30"
+            android:textSize="40sp"
+            android:padding="8dp"
+            android:textColor="#785495"
+            android:layout_margin="8dp"
+            android:background="@color/colorAccent"
+            android:id="@+id/tv1"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:id="@+id/tv2"
+            android:padding="8dp"
+            android:textSize="40sp"
+            android:background="#493"
+            android:text="@string/_70"
+            android:layout_margin="8dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="@string/_60"
+            android:textSize="40sp"
+            android:padding="8dp"
+            android:textColor="#131618"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:padding="8dp"
+            android:textSize="40sp"
+            android:text="@string/_40"
+            android:background="#bcbc32"
+            android:layout_margin="8dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>
