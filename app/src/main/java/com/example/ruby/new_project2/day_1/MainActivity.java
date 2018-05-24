@@ -15,6 +15,7 @@ import com.example.ruby.new_project2.day_2.Main2Activity;
 import com.example.ruby.new_project2.day_3.Main3Activity;
 import com.example.ruby.new_project2.R;
 import com.example.ruby.new_project2.day_3_project.Main4Activity;
+import com.example.ruby.new_project2.day_4.Main5Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView title = new TextView(this);
 // You Can Customise your Title here
-        title.setText("Under Construction");
+        title.setText("Valid Queation");
         title.setPadding(10, 10, 10, 10);
         title.setGravity(Gravity.CENTER);
         title.setTextColor(Color.RED);
@@ -52,10 +53,12 @@ public class MainActivity extends AppCompatActivity {
         // Title
         alertDialogBuilder.setCustomTitle(title);
         //Message
-        alertDialogBuilder.setMessage("Do you want to Exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setMessage("Do you really want to Enter?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                MainActivity.this.finish();
+                dialog.cancel();
+                Intent intent = new Intent(MainActivity.this, Main5Activity.class);
+                startActivity(intent);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override

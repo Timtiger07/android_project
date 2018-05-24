@@ -18,4 +18,6 @@
     <string name="login">Login</string>
     <string name="reg">Register Now</string>
     <string name="training">Training</string>
+    <string name="simple_list_view">Simple List View</string>
+    <string name="custom_list_view">Custom List View</string>
 </resources>

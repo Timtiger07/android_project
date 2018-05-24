@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".day_3.Splash">
+        <activity android:name=".day_4.Main6Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,11 @@
         <activity android:name=".day_3_project.Main4Activity" />
         <activity android:name=".day_2.Main2Activity" />
         <activity android:name=".day_3.Main3Activity" />
-        <activity android:name=".day_1.MainActivity"></activity>
+        <activity android:name=".day_1.MainActivity" />
+        <activity android:name=".day_3.Splash" />
+        <activity android:name=".day_4.List_View" />
+        <activity android:name=".day_4.Main5Activity" />
+        <activity android:name=".CustomAdapter_helper"></activity>
     </application>
 
 </manifest>
