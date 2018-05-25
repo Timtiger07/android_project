@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.ruby.new_project2.day_4.ButtonForListView">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/list_views"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.v7.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

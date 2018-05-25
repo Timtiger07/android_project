@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.ruby.new_project2.day_5.Main7Activity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="@string/expandablelistview"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.v7.widget.Toolbar>
 
 
     <ExpandableListView
         android:id="@+id/simpleExpandableListView"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:divider="#f00"
         android:dividerHeight="1dp"
         android:listSelector="#469eaf" />
 
 
-</RelativeLayout>
+</LinearLayout>

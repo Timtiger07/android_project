@@ -20,7 +20,14 @@
         android:id="@+id/toolbar"
         app:titleTextColor="@color/colorPrimaryDark"
         android:background="@color/colorAccent">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_project"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            />
 
     </android.support.v7.widget.Toolbar>
 
@@ -50,6 +57,7 @@
         android:hint="@string/email_address"
         android:textColor="#585858"
         android:singleLine="true"
+        android:id="@+id/id"
         />
 
     <EditText
@@ -61,7 +69,8 @@
         android:padding="8dp"
         android:hint="@string/pass"
         android:textColor="#585858"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:id="@+id/pass"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -91,6 +100,7 @@
         android:background="@drawable/circular_button"
         android:padding="8dp"
         android:text="@string/login"
+        android:onClick="login"
         android:textColor="#ffffff"
         />
 

@@ -8,14 +8,23 @@
     tools:context="com.example.ruby.new_project2.day_4.Main5Activity"
     android:orientation="vertical">
 
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent">
+
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:text="@string/simple_list_view"
         android:gravity="center"
         android:layout_marginBottom="8dp"
         android:textColor="@color/colorPrimaryDark"/>
+    </android.support.v7.widget.Toolbar>
+
 
     <ListView
         android:layout_width="match_parent"

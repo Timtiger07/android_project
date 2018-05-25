@@ -22,9 +22,6 @@ public class Main3Activity extends AppCompatActivity {
         setSupportActionBar(TopTool);
 
 
-
-
-
         TopTool.setNavigationIcon(R.drawable.round_arrow_back_black_18dp);
 
         TopTool.setNavigationOnClickListener(new View.OnClickListener() {

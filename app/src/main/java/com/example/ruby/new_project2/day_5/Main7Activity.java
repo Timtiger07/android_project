@@ -2,6 +2,7 @@ package com.example.ruby.new_project2.day_5;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -15,7 +16,7 @@ public class Main7Activity extends AppCompatActivity {
 
     private LinkedHashMap<String, GroupInfo> subjects = new LinkedHashMap<String, GroupInfo>();
     private ArrayList<GroupInfo> deptList = new ArrayList<GroupInfo>();
-
+    private Toolbar toolbar;
     private CustomAdapter listAdapter;
     private ExpandableListView simpleExpandableListView;
 
@@ -23,6 +24,19 @@ public class Main7Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main7);
+
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationIcon(R.drawable.round_arrow_back_black_18dp);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Main7Activity.this.finish();
+            }
+        });
 
 
         // add data for displaying in expandable list view

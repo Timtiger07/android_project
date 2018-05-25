@@ -22,5 +22,7 @@
     <string name="custom_list_view">Custom List View</string>
     <string name="expandable_list_view">Expandable List View</string>
     <string name="next_project_comes_here">Next Project Comes Here</string>
+    <string name="expandablelistview">ExpandableListView</string>
+    <string name="list_views">List Views</string>
 
 </resources>

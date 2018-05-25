@@ -8,14 +8,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.ruby.new_project2.day_1.MainActivity">
 
-    <TextView
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/new_project"
-        android:layout_margin="8dp"
-        android:textSize="30sp"
-        android:gravity="center_horizontal"
-        />
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        app:titleTextColor="@color/colorAccent"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_project"
+            android:layout_margin="8dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">

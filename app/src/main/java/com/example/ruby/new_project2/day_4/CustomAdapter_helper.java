@@ -1,6 +1,9 @@
 package com.example.ruby.new_project2.day_4;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,24 +14,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.ruby.new_project2.R;
+import com.example.ruby.new_project2.day_1.MainActivity;
 
 
 public class CustomAdapter_helper extends BaseAdapter {
     Context context;
-    String countryList[];
-    int flags[];
+    String name[];
+    int player_image[];
     LayoutInflater inflter;
+    TextView country;
 
-    public CustomAdapter_helper(Context applicationContext, String[] countryList, int[] flags) {
+
+    public CustomAdapter_helper(Context applicationContext, String[] name, int[] player_image) {
         this.context = context;
-        this.countryList = countryList;
-        this.flags = flags;
+        this.name = name;
+        this.player_image = player_image;
         inflter = (LayoutInflater.from(applicationContext));
     }
 
     @Override
     public int getCount() {
-        return countryList.length;
+        return name.length;
     }
 
     @Override
@@ -44,10 +50,11 @@ public class CustomAdapter_helper extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.activity_custom_adapter_helper, null);
-        TextView country = (TextView)           view.findViewById(R.id.textView);
+        country = (TextView)           view.findViewById(R.id.textView);
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
-        country.setText(countryList[i]);
-        icon.setImageResource(flags[i]);
+        country.setText(name[i]);
+        icon.setImageResource(player_image[i]);
         return view;
     }
+
 }

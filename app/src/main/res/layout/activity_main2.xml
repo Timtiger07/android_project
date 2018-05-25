@@ -17,7 +17,15 @@
     app:titleTextColor="@color/colorPrimaryDark"
     android:background="@color/colorAccent"
     >
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_project"
+        android:layout_margin="8dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        />
 </android.support.v7.widget.Toolbar>
 
     <LinearLayout
@@ -37,6 +45,7 @@
             android:padding="8dp"
             android:textColor="#785495"
             android:layout_margin="8dp"
+            android:gravity="center"
             android:background="@color/colorAccent"
             android:id="@+id/tv1"
             />
@@ -46,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
+            android:gravity="center"
             android:id="@+id/tv2"
             android:padding="8dp"
             android:textSize="40sp"
@@ -71,6 +81,7 @@
             android:textSize="40sp"
             android:padding="8dp"
             android:textColor="#131618"
+            android:gravity="center"
             android:layout_margin="8dp"
             android:background="@color/colorPrimaryDark"
             />
@@ -81,6 +92,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:padding="8dp"
+            android:gravity="center"
             android:textSize="40sp"
             android:text="@string/_40"
             android:background="#bcbc32"
