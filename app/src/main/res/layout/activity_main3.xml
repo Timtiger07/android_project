@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:fitsSystemWindows="true"
     tools:context="com.example.ruby.new_project2.day_3.Main3Activity">
 
@@ -18,5 +19,13 @@
         >
 
     </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/next_project_comes_here"
+        android:textSize="40sp"/>
 
 </LinearLayout>

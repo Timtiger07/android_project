@@ -15,6 +15,7 @@ import com.example.ruby.new_project2.day_2.Main2Activity;
 import com.example.ruby.new_project2.day_3.Main3Activity;
 import com.example.ruby.new_project2.R;
 import com.example.ruby.new_project2.day_3_project.Main4Activity;
+import com.example.ruby.new_project2.day_4.ButtonForListView;
 import com.example.ruby.new_project2.day_4.Main5Activity;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
-                Intent intent = new Intent(MainActivity.this, Main5Activity.class);
+                Intent intent = new Intent(MainActivity.this, ButtonForListView.class);
                 startActivity(intent);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {

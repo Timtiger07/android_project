@@ -17,8 +17,8 @@
         android:id="@+id/simpleListView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:divider="@color/Green"
-        android:dividerHeight="1dp"
+        android:divider="#4bb1d2"
+        android:dividerHeight="0.5dp"
         android:footerDividersEnabled="false" />
 
 </LinearLayout>

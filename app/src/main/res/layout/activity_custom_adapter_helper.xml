@@ -8,6 +8,8 @@
         android:id="@+id/icon"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Nothing"
          />
 
     <TextView
@@ -16,5 +18,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="8dp"
-        android:textColor="@color/Green" />
+        android:textColor="#de3030" />
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.ruby.new_project2;
+package com.example.ruby.new_project2.day_4;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.util.zip.Inflater;
+
+import com.example.ruby.new_project2.R;
 
 
 public class CustomAdapter_helper extends BaseAdapter {

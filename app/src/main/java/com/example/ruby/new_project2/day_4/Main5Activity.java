@@ -22,5 +22,4 @@ public class Main5Activity extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_list__view, R.id.textView, countryList);
         simpleList.setAdapter(arrayAdapter);}
 
-
 }
