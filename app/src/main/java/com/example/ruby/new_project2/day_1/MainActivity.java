@@ -18,6 +18,8 @@ import com.example.ruby.new_project2.R;
 import com.example.ruby.new_project2.day_3_project.Main4Activity;
 import com.example.ruby.new_project2.day_4.ButtonForListView;
 import com.example.ruby.new_project2.day_4.Main5Activity;
+import com.example.ruby.new_project2.week_2_day_2.Fragment;
+import com.example.ruby.new_project2.week_2_day_2.Main9Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,9 +82,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bt4(View v){
-    Intent intent = new Intent(MainActivity.this, Main4Activity.class);
-    startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, Main4Activity.class);
+        startActivity(intent);
     }
 
+    public void bt5(View v){
+        Intent intent = new Intent(MainActivity.this, Fragment.class);
+        startActivity(intent);
+
+    }
+
+    public void bt6(View v){
+        Intent intent = new Intent(MainActivity.this, Main9Activity.class);
+        startActivity(intent);
+
+    }
+
+    public void button2(View v){
+        finish();
+        System.exit(1);
+    }
 
 }

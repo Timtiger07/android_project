@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".day_3.Splash">
+        <activity android:name=".day_1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +20,20 @@
         <activity android:name=".day_2.Main2Activity" />
         <activity android:name=".day_3.Main3Activity" />
         <activity android:name=".day_4.Main6Activity" />
-        <activity android:name=".day_1.MainActivity" />
+        <activity android:name=".week_2_day_2.Main9Activity" />
         <activity android:name=".day_4.List_View" />
         <activity android:name=".day_4.Main5Activity" />
-        <activity android:name=".day_4.CustomAdapter_helper" />
         <activity android:name=".day_4.ButtonForListView" />
-        <activity android:name=".day_5.Main7Activity"></activity>
+        <activity android:name=".day_5.Main7Activity" />
+        <activity android:name=".day_3.Splash" />
+
+        <service android:name=".week_2_day_1.MyService" />
+
+        <activity android:name=".week_2_day_1.Main8Activity" />
+
+        <receiver android:name=".week_2_day_2.AlarmReceiver" />
+
+        <activity android:name=".week_2_day_2.Fragment"></activity>
     </application>
 
 </manifest>

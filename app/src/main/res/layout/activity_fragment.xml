@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context="com.example.ruby.new_project2.week_2_day_2.Fragment">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_project"
+            android:layout_margin="8dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clk"
+        android:text="Fragment 1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:onClick="clk2"
+        android:text="Replace Fragment 1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
