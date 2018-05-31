@@ -36,5 +36,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_1_replaced_nby_this_fragment_2">Fragment 1 replaced \nBy This Fragment 2</string>
     <string name="fragment_1_created">Fragment 1 Created</string>
+    <string name="press">Press</string>
 
 </resources>

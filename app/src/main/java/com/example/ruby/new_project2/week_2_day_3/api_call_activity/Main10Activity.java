@@ -1,0 +1,80 @@
+package com.example.ruby.new_project2.week_2_day_3.api_call_activity;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+import com.example.ruby.new_project2.R;
+import com.example.ruby.new_project2.week_2_day_3.async_task.SampleAsync;
+import com.example.ruby.new_project2.week_2_day_3.constants.ApplicationConstants;
+import com.example.ruby.new_project2.week_2_day_3.interfaces.SampleInterface;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class Main10Activity extends AppCompatActivity implements  SampleInterface,View.OnClickListener {
+
+    private Button BTN_click;
+    private SampleInterface mInterface;
+    private String str_Name;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main10);
+        BTN_click  = (Button)findViewById(R.id.btn_click);
+        BTN_click.setOnClickListener(this);
+        mInterface = this;
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == BTN_click){
+
+            if(ApplicationConstants.isNetworkAvailable(Main10Activity.this)) {
+                SampleAsync mAsync = new SampleAsync(Main10Activity.this, mInterface);
+                mAsync.execute();
+            }else{
+                ApplicationConstants.
+                        ShowAlert(Main10Activity.this,"No Internet Error","please connect tot internet",false);
+            }
+
+        }
+
+    }
+
+    @Override
+    public void OnResult(String result) {
+
+        Log.d("bharat", "result  : " + result);
+
+        if(result != null){
+            try {
+                JSONObject mJsonObj = new JSONObject(result);
+                if(mJsonObj != null){
+                    JSONArray mContactArray = mJsonObj.getJSONArray("contacts");
+                    if(mContactArray.length() > 0){
+                        for(int i=0; i<mContactArray.length();i++){
+                            JSONObject mContactObj = mContactArray.getJSONObject(i);
+                            if(mContactObj != null){
+                                if(mContactObj.has("name")){
+                                    if(mContactObj.getString("name") != null){
+                                        str_Name = mContactObj.getString("name");
+                                        Log.d("bharat","str_Name " + str_Name);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else{
+            ApplicationConstants.ShowAlert(Main10Activity.this,"No Response from server","",false);
+        }
+    }
+}
