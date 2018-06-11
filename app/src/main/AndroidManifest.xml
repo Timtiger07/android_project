@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".week_2_day_3.api_call_activity.Main10Activity">
+        <activity android:name=".week_2_day_5.Main12Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +37,11 @@
         <receiver android:name=".week_2_day_2.AlarmReceiver" />
 
         <activity android:name=".week_2_day_2.Fragment" />
-        <activity android:name=".day_1.MainActivity"></activity>
+        <activity android:name=".day_1.MainActivity" />
+        <activity android:name=".week_2_day_4.Main11Activity" />
+        <activity android:name=".week_2_day_4.AllDetails" />
+        <activity android:name=".week_2_day_3.api_call_activity.Main10Activity" />
+        <activity android:name=".week_2_day_5.Main13Activity"></activity>
     </application>
 
 </manifest>

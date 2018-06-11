@@ -37,5 +37,7 @@
     <string name="fragment_1_replaced_nby_this_fragment_2">Fragment 1 replaced \nBy This Fragment 2</string>
     <string name="fragment_1_created">Fragment 1 Created</string>
     <string name="press">Press</string>
+    <string name="title_activity_main12">Main12Activity</string>
+    <string name="back">Back</string>
 
 </resources>
